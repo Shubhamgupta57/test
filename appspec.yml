@@ -1,0 +1,15 @@
+  
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /home/ubuntu/test
+hooks:
+  BeforeInstall:
+    - location: scripts/before_install.sh
+      timeout: 600
+      runas: root
+  ApplicationStart:
+    - location: scripts/application_start.sh
+      timeout: 300
+      runas: root
