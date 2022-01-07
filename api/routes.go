@@ -18,6 +18,4 @@ func (a *API) setupRoutes() {
 func (a *API) InitRoutes() {
 
 	a.Router.Root.Handle("/", a.requestHandler(a.landing)).Methods("GET")
-
-	a.Router.Root.Handle("/shopify/orders-get", a.requestHandler(a.getShopifyOrders)).Methods("GET")
 }
