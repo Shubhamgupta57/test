@@ -5,6 +5,10 @@ files:
   - source: /
     destination: /home/ubuntu/test
 hooks:
+  ApplicationStop:
+    - location: scripts/application_stop.sh
+      timeout: 600
+      runas: root
   BeforeInstall:
     - location: scripts/before_install.sh
       timeout: 600
