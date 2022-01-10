@@ -1,4 +1,5 @@
 #!/bin/bash
-cd test
-go build main.go
+cd test/
+sudo go build main.go
+sudo systemctl enable test
 sudo service test restart
