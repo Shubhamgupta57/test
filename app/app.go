@@ -1,8 +1,8 @@
 package app
 
 import (
-	config "integrations/cmd/config"
-	"integrations/logger"
+	config "devops-testing/cmd/config"
+	"devops-testing/logger"
 )
 
 // App := app struct containing resources to implement business login

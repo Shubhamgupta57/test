@@ -1,8 +1,8 @@
 package main
 
 import (
+	"devops-testing/cmd/server"
 	"fmt"
-	"integrations/cmd/server"
 )
 
 func main() {

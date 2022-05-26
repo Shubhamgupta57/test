@@ -8,10 +8,10 @@ import (
 	"sync"
 	"time"
 
-	"integrations/api"
-	"integrations/api/middleware"
-	config "integrations/cmd/config"
-	"integrations/logger"
+	"devops-testing/api"
+	"devops-testing/api/middleware"
+	config "devops-testing/cmd/config"
+	"devops-testing/logger"
 
 	"github.com/gorilla/mux"
 	"github.com/rs/cors"

@@ -4,8 +4,8 @@ import (
 	"net/http"
 	"time"
 
-	"integrations/logger"
-	"integrations/model"
+	"devops-testing/logger"
+	"devops-testing/model"
 
 	"github.com/felixge/httpsnoop"
 )

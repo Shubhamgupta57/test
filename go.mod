@@ -1,4 +1,4 @@
-module integrations
+module devops-testing
 
 go 1.16
 
@@ -15,6 +15,5 @@ require (
 	github.com/spf13/viper v1.9.0
 	github.com/urfave/negroni v1.0.0
 	github.com/vasupal1996/goerror v0.0.0-20201208172918-4461ab1738f7
-	go.mongodb.org/mongo-driver v1.7.3
 	gopkg.in/natefinch/lumberjack.v2 v2.0.0
 )

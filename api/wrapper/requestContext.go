@@ -1,7 +1,7 @@
 package wrapper
 
 import (
-	"integrations/model"
+	"devops-testing/model"
 )
 
 // RequestContext := contains request/reponse related data

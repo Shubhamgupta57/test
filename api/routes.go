@@ -18,4 +18,5 @@ func (a *API) setupRoutes() {
 func (a *API) InitRoutes() {
 
 	a.Router.Root.Handle("/", a.requestHandler(a.landing)).Methods("GET")
+	a.Router.Root.Handle("/swagger-testing", a.requestHandler(a.swaggerTest)).Methods("POST")
 }

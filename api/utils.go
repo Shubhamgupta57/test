@@ -1,7 +1,7 @@
 package api
 
 import (
-	"integrations/api/wrapper"
+	"devops-testing/api/wrapper"
 	"net/http"
 	"text/template"
 )

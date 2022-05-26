@@ -1,10 +1,10 @@
 package api
 
 import (
-	"integrations/app"
-	config "integrations/cmd/config"
-	"integrations/logger"
-	"integrations/validation"
+	"devops-testing/app"
+	config "devops-testing/cmd/config"
+	"devops-testing/logger"
+	"devops-testing/validation"
 
 	"github.com/gorilla/mux"
 )

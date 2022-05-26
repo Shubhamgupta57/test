@@ -1,8 +1,8 @@
 package wrapper
 
 import (
+	"devops-testing/model"
 	"encoding/json"
-	"integrations/model"
 	"net/http"
 
 	uuid "github.com/satori/go.uuid"
@@ -28,12 +28,15 @@ func (rh *Request) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	switch t := requestCTX.ResponseType; t {
 	case model.HTMLResp:
 		w.Header().Set("Content-Type", "text/html")
+		w.WriteHeader(requestCTX.ResponseCode)
 		w.Write(requestCTX.Response.Payload.([]byte))
 	case model.JSONResp:
 		w.Header().Set("Content-Type", "application/json")
+		w.WriteHeader(requestCTX.ResponseCode)
 		json.NewEncoder(w).Encode(requestCTX.Response)
 	case model.ErrorResp:
 		w.Header().Set("Content-Type", "application/json")
+		w.WriteHeader(requestCTX.ResponseCode)
 		requestCTX.Err.RequestID = &requestCTX.RequestID
 		json.NewEncoder(w).Encode(&requestCTX.Err)
 	}
